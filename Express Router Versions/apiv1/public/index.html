@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+
+    <body onload="getAllPost()">
+
+
+      <h1>My Post CRUD app </h1>
+  
+      <form onsubmit="createPost(); return false">
+  
+          <h2>Create a post:</h2>
+  
+          <label for="postTitle">Title:</label>
+          <input class="form-control input" type="text" placeholder="Enter Your Title" aria-label="default input example">
+
+  
+          <br>
+          <label for="postText">Text:</label>
+          <input class="form-control form-control-lg input" type="text" placeholder="Enter Your Text" aria-label=".form-control-lg example">
+
+  
+          <br>
+  
+          <button type="button" class="btn btn-secondary">Post</button>
+  
+          <br>
+          <br>
+          <br>
+      </form>
+  
+      
+      <div id="result"></div>
+      <br>
+      <br>
+      <div id="posts"></div>
+  
+        
+      </div>
+
+
+    
+    
+<script type="module" src="./script.mjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

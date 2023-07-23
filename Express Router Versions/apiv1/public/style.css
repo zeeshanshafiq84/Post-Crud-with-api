@@ -1,0 +1,31 @@
+/*
+*{
+    color: rgb(248, 244, 244)!important;
+}
+*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    row-gap: 1.5rem;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+
+.input{
+    color: black!important;
+}
+
