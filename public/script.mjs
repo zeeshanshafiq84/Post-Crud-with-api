@@ -37,8 +37,8 @@ window.getAllPost = function () {
                     `<div id='card-${eachPost.id}' class="post-card">
                         <h3>${eachPost.title}</h3>
                         <p> ${eachPost.text} </p>
-                        <button onclick="delPost('${eachPost.id}')">Delete</button>
-                        <button onclick="editPost('${eachPost.id}','${eachPost.title}','${eachPost.text}', )">Edit</button>
+                        <button onclick="delPost('${eachPost.id}' )" class="del-btn">Delete</button>
+                        <button onclick="editPost('${eachPost.id}','${eachPost.title}','${eachPost.text}', )" class="edt-btn">Edit</button>
                     </div> 
                     <br />`
             })
@@ -87,7 +87,7 @@ window.editPost = (postId, title, text) => {
 
         </form>`
 }
-window.savePost = (postId)=>{
+window.savePost = (postId) => {
     const updatedTitle = document.querySelector(`#title-${postId}`).value;
     const updatedText = document.querySelector(`#text-${postId}`).value;
 

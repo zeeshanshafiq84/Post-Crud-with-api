@@ -29,3 +29,32 @@ form{
     color: black!important;
 }
 
+.post-card{
+
+    box-shadow: 0px 0px 10px black;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.post-card>h3 {
+    margin: 0;
+}
+
+.del-btn{
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+
+.edt-btn{
+    
+    
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    size: 3rem;
+}
